@@ -32,7 +32,8 @@
     "@stackra/ts-logger": "*",
     "@stackra/ts-redis": "*",
     "@stackra/ts-support": "*",
-    "react": "^19.2.6"
+    "react": "^19.2.6",
+    "@stackra/contracts": "*"
   },
   "peerDependenciesMeta": {
     "@stackra/ts-container": {
@@ -77,7 +78,6 @@
     "react": "^19.2.6"
   },
   "dependencies": {
-    "@stackra/contracts": "github:stackra-inc/contracts#main",
     "laravel-echo": "^2.3.4",
     "pusher-js": "^8.5.0"
   }
