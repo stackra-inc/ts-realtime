@@ -72,8 +72,8 @@
     "@stackra/ts-support": "github:stackra-inc/ts-support#main",
     "@stackra/typescript-config": "^1.0.12",
     "@types/react": "^19.2.14",
-    "fast-check": "catalog:test",
-    "jiti": "catalog:build",
+    "fast-check": "^4.8.0",
+    "jiti": "^2.7.0",
     "react": "^19.2.6"
   },
   "dependencies": {
