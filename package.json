@@ -1,0 +1,85 @@
+{
+  "name": "@stackra/ts-realtime",
+  "version": "1.0.1",
+  "description": "Platform-agnostic Laravel Echo wrapper with DI module, typed channels, reconnection, and React hooks for real-time WebSocket communication",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "check-types": "tsc --noEmit",
+    "clean": "rm -rf dist node_modules/.cache",
+    "test": "vitest run --passWithNoTests",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui"
+  },
+  "peerDependencies": {
+    "@heroui-pro/react": "catalog:heroui",
+    "@stackra/ts-container": "workspace:*",
+    "@stackra/ts-coordinator": "workspace:*",
+    "@stackra/ts-events": "workspace:*",
+    "@stackra/ts-http": "workspace:*",
+    "@stackra/ts-logger": "workspace:*",
+    "@stackra/ts-redis": "workspace:*",
+    "@stackra/ts-support": "workspace:*",
+    "react": "catalog:react"
+  },
+  "peerDependenciesMeta": {
+    "@stackra/ts-container": {
+      "optional": false
+    },
+    "@stackra/ts-support": {
+      "optional": false
+    },
+    "@stackra/ts-coordinator": {
+      "optional": true
+    },
+    "@stackra/ts-events": {
+      "optional": true
+    },
+    "@stackra/ts-http": {
+      "optional": true
+    },
+    "@stackra/ts-logger": {
+      "optional": false
+    },
+    "@stackra/ts-redis": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@heroui-pro/react": "catalog:heroui",
+    "@stackra/testing": "workspace:*",
+    "@stackra/ts-container": "workspace:*",
+    "@stackra/ts-coordinator": "workspace:*",
+    "@stackra/ts-events": "workspace:*",
+    "@stackra/ts-http": "workspace:*",
+    "@stackra/ts-logger": "workspace:*",
+    "@stackra/ts-redis": "workspace:*",
+    "@stackra/ts-support": "workspace:*",
+    "@stackra/typescript-config": "catalog:stackra",
+    "@types/react": "catalog:react",
+    "fast-check": "catalog:test",
+    "jiti": "catalog:build",
+    "react": "catalog:react"
+  },
+  "dependencies": {
+    "@stackra/contracts": "workspace:*",
+    "laravel-echo": "catalog:",
+    "pusher-js": "catalog:"
+  },
+  "private": true
+}
