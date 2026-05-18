@@ -24,15 +24,15 @@
     "test:ui": "vitest --ui"
   },
   "peerDependencies": {
-    "@heroui-pro/react": "catalog:heroui",
-    "@stackra/ts-container": "workspace:*",
-    "@stackra/ts-coordinator": "workspace:*",
-    "@stackra/ts-events": "workspace:*",
-    "@stackra/ts-http": "workspace:*",
-    "@stackra/ts-logger": "workspace:*",
-    "@stackra/ts-redis": "workspace:*",
-    "@stackra/ts-support": "workspace:*",
-    "react": "catalog:react"
+    "@heroui-pro/react": "^1.0.0-beta.3",
+    "@stackra/ts-container": "*",
+    "@stackra/ts-coordinator": "*",
+    "@stackra/ts-events": "*",
+    "@stackra/ts-http": "*",
+    "@stackra/ts-logger": "*",
+    "@stackra/ts-redis": "*",
+    "@stackra/ts-support": "*",
+    "react": "^19.2.6"
   },
   "peerDependenciesMeta": {
     "@stackra/ts-container": {
@@ -61,25 +61,24 @@
     }
   },
   "devDependencies": {
-    "@heroui-pro/react": "catalog:heroui",
+    "@heroui-pro/react": "^1.0.0-beta.3",
     "@stackra/testing": "workspace:*",
-    "@stackra/ts-container": "workspace:*",
-    "@stackra/ts-coordinator": "workspace:*",
-    "@stackra/ts-events": "workspace:*",
-    "@stackra/ts-http": "workspace:*",
-    "@stackra/ts-logger": "workspace:*",
-    "@stackra/ts-redis": "workspace:*",
-    "@stackra/ts-support": "workspace:*",
-    "@stackra/typescript-config": "catalog:stackra",
-    "@types/react": "catalog:react",
+    "@stackra/ts-container": "github:stackra-inc/ts-container#main",
+    "@stackra/ts-coordinator": "github:stackra-inc/ts-coordinator#main",
+    "@stackra/ts-events": "github:stackra-inc/ts-events#main",
+    "@stackra/ts-http": "github:stackra-inc/ts-http#main",
+    "@stackra/ts-logger": "github:stackra-inc/ts-logger#main",
+    "@stackra/ts-redis": "github:stackra-inc/ts-redis#main",
+    "@stackra/ts-support": "github:stackra-inc/ts-support#main",
+    "@stackra/typescript-config": "^1.0.12",
+    "@types/react": "^19.2.14",
     "fast-check": "catalog:test",
     "jiti": "catalog:build",
-    "react": "catalog:react"
+    "react": "^19.2.6"
   },
   "dependencies": {
     "@stackra/contracts": "workspace:*",
-    "laravel-echo": "catalog:",
-    "pusher-js": "catalog:"
-  },
-  "private": true
+    "laravel-echo": "^2.3.4",
+    "pusher-js": "^8.5.0"
+  }
 }
