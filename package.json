@@ -77,7 +77,7 @@
     "react": "^19.2.6"
   },
   "dependencies": {
-    "@stackra/contracts": "workspace:*",
+    "@stackra/contracts": "github:stackra-inc/contracts#main",
     "laravel-echo": "^2.3.4",
     "pusher-js": "^8.5.0"
   }
